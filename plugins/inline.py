@@ -52,7 +52,7 @@ async def answer(bot, query):
         switch_pm_text = f"{emoji.FILE_FOLDER} Results"
         if string:
             switch_pm_text += f" for {string}"
-
+        print(next_offset)
         await query.answer(results=results,
                            cache_time=cache_time,
                            switch_pm_text=switch_pm_text,
